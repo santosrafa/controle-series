@@ -14,6 +14,6 @@ class SeriesController extends Controller
             'Robocoop'
         ];
 
-        return view('listar-series', compact('series'));
+        return view('series.index')->with('series', $series);
     }
 }
